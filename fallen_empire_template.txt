@@ -76,14 +76,23 @@ fallen_empire_TODO = {
 				add_global_ship_design = "NAME_FE_Starbase"
 				create_leader = {
 					name = TODO
-					class = TODO
+					class = scientist
 					gender = TODO
 					species = owner_main_species
 					immortal = yes
-					randomize_traits = yes
+					traits = {
+						trait = leader_trait_spark_of_genius_2
+						trait = trait_ruler_logistic_understanding_2
+						trait = leader_trait_fleet_organizer_2
+						trait = subclass_scientist_councilor
+						trait = leader_trait_inquisitive_3
+						trait = leader_trait_knowledge_for_the_masses
+					}
 					skill = 9
 				}
 				set_leader = last_created_leader
+				set_ruler_title_male = TODO
+				set_ruler_title_female = TODO
 			}
 		}
 	}
@@ -164,14 +173,23 @@ fallen_empire_TODO = {
 				add_global_ship_design = "NAME_FE_Starbase"
 				create_leader = {
 					name = TODO
-					class = TODO
+					class = official
 					gender = TODO
 					species = owner_main_species
 					immortal = yes
-					randomize_traits = yes
+					traits = {
+						trait = leader_trait_principled_2
+						trait = trait_ruler_logistic_understanding_2
+						trait = leader_trait_fleet_organizer_2
+						trait = subclass_official_economy_councilor
+						trait = leader_trait_cultural_focus_3
+						trait = leader_trait_utopian_idealist
+					}
 					skill = 9
 				}
 				set_leader = last_created_leader
+				set_ruler_title_male = TODO
+				set_ruler_title_female = TODO
 			}
 		}
 	}
@@ -254,10 +272,19 @@ fallen_empire_TODO = {
 					gender = TODO
 					species = owner_main_species
 					immortal = yes
-					randomize_traits = yes
+					traits = {
+						trait = leader_trait_principled_2
+						trait = trait_ruler_logistic_understanding_2
+						trait = leader_trait_fleet_organizer_2
+						trait = subclass_official_economy_councilor
+						trait = leader_trait_cultural_focus_3
+						trait = leader_trait_utopian_idealist
+					}
 					skill = 9
 				}
 				set_leader = last_created_leader
+				set_ruler_title_male = TODO
+				set_ruler_title_female = TODO
 			}
 		}
 	}
@@ -337,14 +364,24 @@ fallen_empire_TODO = {
 				add_global_ship_design = "NAME_FE_Starbase"
 				create_leader = {
 					name = TODO
-					class = TODO
+					class = commander
 					gender = TODO
 					species = owner_main_species
 					immortal = yes
-					randomize_traits = yes
+					traits = {
+						trait = trait_ruler_warlike_2
+						trait = trait_ruler_logistic_understanding_2
+						trait = leader_trait_fleet_organizer_2
+						trait = subclass_commander_councilor
+						trait = leader_trait_gale_speed_3
+						trait = leader_trait_military_overseer
+					}
+					randomize_traits = no
 					skill = 9
 				}
 				set_leader = last_created_leader
+				set_ruler_title_male = TODO
+				set_ruler_title_female = TODO
 			}
 		}
 	}
@@ -413,6 +450,7 @@ fallen_machine_empire_TODO = {
 			}
 			origin = "origin_fallen_empire"
 			effect = {
+				
 				set_country_flag = fallen_empire_machine
 				add_resource = {
 					minerals = 10000
@@ -438,13 +476,21 @@ fallen_machine_empire_TODO = {
 				add_global_ship_design = "NAME_FE_Starbase"
 				create_leader = {
 					name = TODO
-					class = TODO
+					class = scientist
 					species = owner_main_species
 					immortal = yes
-					randomize_traits = yes
+					traits = {
+						trait = leader_trait_ruler_machine_intelligence
+						trait = leader_trait_spark_of_genius_2
+						trait = trait_ruler_logistic_understanding_2
+						trait = leader_trait_fleet_organizer_2
+						trait = leader_trait_inquisitive_3
+					}
 					skill = 9
 				}
 				set_leader = last_created_leader
+				set_ruler_title_male = TODO
+				set_ruler_title_female = TODO
 			}
 		}
 	}
