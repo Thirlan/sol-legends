@@ -93,7 +93,14 @@ fallen_empire_of_gloom = {
 					gender = male
 					species = owner_main_species
 					immortal = yes
-					randomize_traits = yes
+					traits = {
+						trait = leader_trait_spark_of_genius_2
+						trait = trait_ruler_logistic_understanding_2
+						trait = leader_trait_fleet_organizer_2
+						trait = subclass_scientist_councilor
+						trait = leader_trait_inquisitive_3
+						trait = leader_trait_knowledge_for_the_masses
+					}
 					skill = 9
 				}
 				set_leader = last_created_leader
@@ -197,7 +204,14 @@ fallen_rudonian_peoples_republic = {
 					gender = male
 					species = owner_main_species
 					immortal = yes
-					randomize_traits = yes
+					traits = {
+						trait = leader_trait_principled_2
+						trait = trait_ruler_logistic_understanding_2
+						trait = leader_trait_fleet_organizer_2
+						trait = subclass_official_economy_councilor
+						trait = leader_trait_cultural_focus_3
+						trait = leader_trait_utopian_idealist
+					}
 					skill = 9
 				}
 				set_leader = last_created_leader
@@ -314,6 +328,12 @@ fallen_the_hugbox_neighborhood = {
 					species = owner_main_species
 					traits = {
 						trait = leader_trait_ruler_machine_intelligence
+						trait = leader_trait_spark_of_genius_2
+						trait = trait_ruler_logistic_understanding_2
+						trait = leader_trait_fleet_organizer_2
+						trait = subclass_scientist_councilor
+						trait = leader_trait_inquisitive_3
+						trait = leader_trait_great_researcher
 					}
 					skill = 9
 				}
@@ -417,7 +437,14 @@ fallen_empire_lenkashayt_acquisitive_venture = {
 					gender = male
 					species = owner_main_species
 					immortal = yes
-					randomize_traits = yes
+					traits = {
+						trait = leader_trait_principled_2
+						trait = trait_ruler_logistic_understanding_2
+						trait = leader_trait_fleet_organizer_2
+						trait = subclass_official_economy_councilor
+						trait = leader_trait_cultural_focus_3
+						trait = leader_trait_utopian_idealist
+					}
 					skill = 9
 				}
 				set_leader = last_created_leader
@@ -520,7 +547,14 @@ fallen_empire_leaders_of_the_free_world = {
 					gender = female
 					species = owner_main_species
 					immortal = yes
-					randomize_traits = yes
+					traits = {
+						trait = leader_trait_principled_2
+						trait = trait_ruler_logistic_understanding_2
+						trait = leader_trait_fleet_organizer_2
+						trait = subclass_official_economy_councilor
+						trait = leader_trait_cultural_focus_3
+						trait = leader_trait_utopian_idealist
+					}
 					skill = 9
 				}
 				set_leader = last_created_leader
@@ -623,7 +657,14 @@ fallen_empire_radishing_vassal_factory = {
 					class = commander
 					species = owner_main_species
 					immortal = yes
-					randomize_traits = yes
+					traits = {
+						trait = trait_ruler_warlike_2
+						trait = trait_ruler_logistic_understanding_2
+						trait = leader_trait_fleet_organizer_2
+						trait = subclass_commander_councilor
+						trait = leader_trait_gale_speed_3
+						trait = leader_trait_military_overseer
+					}
 					skill = 9
 				}
 				set_leader = last_created_leader
@@ -722,21 +763,25 @@ fallen_empire_of_the_glirr = {
 				add_global_ship_design = "NAME_Destiny"
 				add_global_ship_design = "NAME_FE_Starbase"
 				create_leader = {
-					name = random
+					name = "Plumes of Wrath"
 					class = commander
+					gender = female
 					species = owner_main_species
 					immortal = yes
 					traits = {
 						trait = trait_ruler_warlike_2
 						trait = trait_ruler_logistic_understanding_2
 						trait = leader_trait_fleet_organizer_2
-						trait = subclass_commander_admiral
-						trait = leader_trait_armorer
+						trait = subclass_commander_councilor
+						trait = leader_trait_gale_speed_3
+						trait = leader_trait_military_overseer
 					}
 					randomize_traits = no
 					skill = 9
 				}
 				set_leader = last_created_leader
+				set_ruler_title_male = "Overseer"
+				set_ruler_title_female = "Overseer"
 			}
 		}
 	}
@@ -848,11 +893,243 @@ fallen_mircorv_coalescence = {
 					species = owner_main_species
 					traits = {
 						trait = leader_trait_ruler_machine_intelligence
+						trait = leader_trait_spark_of_genius_2
+						trait = trait_ruler_logistic_understanding_2
+						trait = leader_trait_fleet_organizer_2
+						trait = subclass_scientist_councilor
+						trait = leader_trait_inquisitive_3
+						trait = leader_trait_great_researcher
 					}
 					randomize_traits = no
 					skill = 9
 				}
 				set_leader = last_created_leader
+			}
+		}
+	}
+}
+
+# 2022oct: United Earth - Leoback
+# Spiritualist
+fallen_empire_lilliput = {
+	graphical_culture = "fallen_empire_04"
+	initializer = "fallen_4"
+
+	weight_modifier = {
+		base = 99999
+	}
+
+	create_country_effect = {
+		create_species = {
+			name=
+			{
+				key="Vampire"
+				literal=yes
+			}
+			plural=
+			{
+				key="Vampires"
+				literal=yes
+			}
+			adjective=
+			{
+				key="Vampiric"
+				literal=yes
+			}
+			class = NECROID
+			namelist = NECROID4
+			portrait = nec14
+			traits = random
+			extra_trait_points = 3
+			allow_negative_traits = no
+		}
+		create_country = {
+			name = {
+				key="United Earth"
+				literal=yes
+			}
+			adjective = Imperial
+			authority = auth_imperial
+			flag={
+				icon=
+				{
+					category="human"
+					file="flag_human_9.dds"
+				}
+				background=
+				{
+					category="backgrounds"
+					file="flag_BG_24.dds"
+				}
+				colors=
+				{
+					"red"
+					"red"
+					"black"
+					"null"
+				}
+			}
+			ignore_initial_colony_error = yes
+			civics = {
+				civic = civic_lethargic_leadership
+				civic = civic_empire_in_decline
+			}
+			species = last_created_species
+			ethos = {
+				ethic = ethic_fanatic_xenophobe
+			}
+			origin = "origin_fallen_empire"
+			effect = {
+				set_country_flag = fallen_empire_4
+				add_resource = {
+					minerals = 10000
+					energy = 10000
+					food = 1000
+					influence = 500
+				}
+				# must initialize global designs here
+				add_global_ship_design = "NAME_Reaper"
+				add_global_ship_design = "NAME_Imperium"
+				add_global_ship_design = "NAME_Supremacy"
+				add_global_ship_design = "NAME_Glory"
+				add_global_ship_design = "NAME_Devastator"
+				add_global_ship_design = "NAME_Servitor"
+				add_global_ship_design = "NAME_Destiny"
+				add_global_ship_design = "NAME_FE_Starbase"
+				create_leader = {
+					name = Nosferatu
+					class = commander
+					gender = male
+					species = owner_main_species
+					immortal = yes
+					traits = {
+						trait = trait_ruler_warlike_2
+						trait = trait_ruler_logistic_understanding_2
+						trait = leader_trait_fleet_organizer_2
+						trait = subclass_commander_councilor
+						trait = leader_trait_gale_speed_3
+						trait = leader_trait_military_overseer
+					}
+					skill = 9
+				}
+				set_leader = last_created_leader
+				set_ruler_title_male = "Unholy King"
+				set_ruler_title_female = "Unholy Queen"
+			}
+		}
+	}
+}
+
+# 2023sept2: The Lilliput Empire - Leoback
+# Spiritualist
+fallen_empire_TODO = {
+	graphical_culture = "fallen_empire_01"
+	initializer = "fallen_2"
+
+	weight_modifier = {
+		base = 100
+		modifier = {
+			factor = 99999
+			has_origin = origin_scion
+		}
+	}
+
+	create_country_effect = {
+		create_species = {
+			name=
+			{
+				key="Gnome"
+				literal=yes
+			}
+			plural=
+			{
+				key="Gnomes"
+				literal=yes
+			}
+			adjective=
+			{
+				key="Gnomish"
+				literal=yes
+			}
+			class = TOX
+			namelist = TOX1
+			portrait = tox8
+			traits = random
+			extra_trait_points = 3
+			allow_negative_traits = no
+		}
+		create_country = {
+			name = {
+				key="The Lilliput Empire"
+				literal=yes
+			}
+			adjective = "Imperial"
+			authority = auth_imperial
+			flag={
+				icon=
+				{
+					category="zoological"
+					file="flag_zoological_20.dds"
+				}
+				background=
+				{
+					category="backgrounds"
+					file="flag_BG_37.dds"
+				}
+				colors=
+				{
+					"bright_yellow"
+					"black"
+					"black"
+					"null"
+				}
+			}
+			ignore_initial_colony_error = yes
+			civics = {
+				civic = civic_lethargic_leadership
+				civic = civic_empire_in_decline
+			}
+			species = last_created_species
+			ethos = {
+				ethic = ethic_fanatic_spiritualist
+			}
+			origin = "origin_fallen_empire"
+			effect = {
+				set_country_flag = fallen_empire_2
+				add_resource = {
+					minerals = 10000
+					energy = 10000
+					food = 1000
+					influence = 500
+				}
+				# must initialize global designs here
+				add_global_ship_design = "NAME_Cleanser"
+				add_global_ship_design = "NAME_Eternal"
+				add_global_ship_design = "NAME_Avatar"
+				add_global_ship_design = "NAME_Zealot"
+				add_global_ship_design = "NAME_Penitent"
+				add_global_ship_design = "NAME_Faith"
+				add_global_ship_design = "NAME_Pilgrim"
+				add_global_ship_design = "NAME_FE_Starbase"
+				create_leader = {
+					name = "Lemuel Gulliver"
+					class = scientist
+					gender = male
+					species = owner_main_species
+					immortal = yes
+					traits = {
+						trait = leader_trait_spark_of_genius_2
+						trait = trait_ruler_logistic_understanding_2
+						trait = leader_trait_fleet_organizer_2
+						trait = subclass_scientist_councilor
+						trait = leader_trait_inquisitive_3
+						trait = leader_trait_knowledge_for_the_masses
+					}
+					skill = 9
+				}
+				set_leader = last_created_leader
+				set_ruler_title_male = "His Highness"
+				set_ruler_title_female = "Her Highness"
 			}
 		}
 	}
