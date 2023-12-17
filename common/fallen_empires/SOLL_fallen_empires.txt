@@ -322,22 +322,12 @@ fallen_the_hugbox_neighborhood = {
 				add_global_ship_design = "NAME_Tau"
 				add_global_ship_design = "NAME_Sigma"
 				add_global_ship_design = "NAME_FE_Starbase"
-				create_leader = {
-					name = "Friendly Neighbor Karen"
-					class = scientist
-					species = owner_main_species
-					traits = {
-						trait = leader_trait_ruler_machine_intelligence
-						trait = leader_trait_spark_of_genius_2
-						trait = trait_ruler_logistic_understanding_2
-						trait = leader_trait_fleet_organizer_2
-						trait = subclass_scientist_councilor
-						trait = leader_trait_inquisitive_3
-						trait = leader_trait_great_researcher
-					}
-					skill = 9
+				ruler = {
+					set_name = "Karen"
+					add_skill = 9
 				}
-				set_leader = last_created_leader
+				set_ruler_title_male = "Friendly Neighbor"
+				set_ruler_title_female = "Friendly Neighbor"
 			}
 		}
 	}
@@ -432,7 +422,7 @@ fallen_empire_lenkashayt_acquisitive_venture = {
 				add_global_ship_design = "NAME_Builder"
 				add_global_ship_design = "NAME_FE_Starbase"
 				create_leader = {
-					name = random
+					name = "Jonnar"
 					class = official
 					gender = male
 					species = owner_main_species
@@ -448,6 +438,8 @@ fallen_empire_lenkashayt_acquisitive_venture = {
 					skill = 9
 				}
 				set_leader = last_created_leader
+				set_ruler_title_male = CEO
+				set_ruler_title_female = CEO
 			}
 		}
 	}
@@ -653,7 +645,7 @@ fallen_empire_radishing_vassal_factory = {
 				add_global_ship_design = "NAME_Destiny"
 				add_global_ship_design = "NAME_FE_Starbase"
 				create_leader = {
-					name = random
+					name = "Dark Radishton"
 					class = commander
 					species = owner_main_species
 					immortal = yes
@@ -668,6 +660,8 @@ fallen_empire_radishing_vassal_factory = {
 					skill = 9
 				}
 				set_leader = last_created_leader
+				set_ruler_title_male = "Reaper of Hope"
+				set_ruler_title_female = "Reaper of Hope"
 			}
 		}
 	}
@@ -680,7 +674,7 @@ fallen_empire_of_the_glirr = {
 	initializer = "fallen_4"
 
 	weight_modifier = {
-		base = 99999
+		base = 100
 	}
 
 	create_country_effect = {
@@ -887,23 +881,12 @@ fallen_mircorv_coalescence = {
 				add_global_ship_design = "NAME_Tau"
 				add_global_ship_design = "NAME_Sigma"
 				add_global_ship_design = "NAME_FE_Starbase"
-				create_leader = {
-					name = "MCP"
-					class = scientist
-					species = owner_main_species
-					traits = {
-						trait = leader_trait_ruler_machine_intelligence
-						trait = leader_trait_spark_of_genius_2
-						trait = trait_ruler_logistic_understanding_2
-						trait = leader_trait_fleet_organizer_2
-						trait = subclass_scientist_councilor
-						trait = leader_trait_inquisitive_3
-						trait = leader_trait_great_researcher
-					}
-					randomize_traits = no
-					skill = 9
+				ruler = {
+					set_name = "MCP"
+					add_skill = 9
 				}
-				set_leader = last_created_leader
+				set_ruler_title_male = "Custodian"
+				set_ruler_title_female = "Custodian"
 			}
 		}
 	}
@@ -911,12 +894,12 @@ fallen_mircorv_coalescence = {
 
 # 2022oct: United Earth - Leoback
 # Spiritualist
-fallen_empire_lilliput = {
+fallen_empire_united_earth = {
 	graphical_culture = "fallen_empire_04"
 	initializer = "fallen_4"
 
 	weight_modifier = {
-		base = 99999
+		base = 100
 	}
 
 	create_country_effect = {
@@ -969,6 +952,7 @@ fallen_empire_lilliput = {
 					"null"
 				}
 			}
+			type = fallen_empire
 			ignore_initial_colony_error = yes
 			civics = {
 				civic = civic_lethargic_leadership
@@ -1022,7 +1006,7 @@ fallen_empire_lilliput = {
 
 # 2023sept2: The Lilliput Empire - Leoback
 # Spiritualist
-fallen_empire_TODO = {
+fallen_empire_lilliput = {
 	graphical_culture = "fallen_empire_01"
 	initializer = "fallen_2"
 
@@ -1084,6 +1068,7 @@ fallen_empire_TODO = {
 					"null"
 				}
 			}
+			type = fallen_empire
 			ignore_initial_colony_error = yes
 			civics = {
 				civic = civic_lethargic_leadership
@@ -1130,6 +1115,123 @@ fallen_empire_TODO = {
 				set_leader = last_created_leader
 				set_ruler_title_male = "His Highness"
 				set_ruler_title_female = "Her Highness"
+			}
+		}
+	}
+}
+
+# 2023nov: The Coalition of Equals - Leoback
+# Materialist
+fallen_empire_coaltion_of_equals = {
+	graphical_culture = "fallen_empire_02"
+	initializer = "fallen_1"
+
+	weight_modifier = {
+		base = 100
+		modifier = {
+			factor = 99999
+			has_origin = origin_scion
+		}
+	}
+
+	create_country_effect = {
+		create_species = {
+			name=
+			{
+				key="Numerian"
+				literal=yes
+			}
+			plural=
+			{
+				key="Numerians"
+				literal=yes
+			}
+			adjective=
+			{
+				key="Numeric"
+				literal=yes
+			}
+			class = PLANT
+			namelist = PLANT
+			portrait = pla11
+			traits = random
+			extra_trait_points = 3
+			allow_negative_traits = no
+		}
+		create_country = {
+			name = {
+				key="The Coalition of Equals"
+				literal=yes
+			}
+			adjective = Equality
+			authority = auth_democratic
+			flag={
+				icon=
+				{
+					category="human"
+					file="flag_human_7.dds"
+				}
+				background=
+				{
+					category="backgrounds"
+					file="circle.dds"
+				}
+				colors=
+				{
+					"yellow"
+					"black"
+					"black"
+					"null"
+				}
+			}
+		
+			type = fallen_empire
+			ignore_initial_colony_error = yes
+			civics = {
+				civic = civic_lethargic_leadership
+				civic = civic_empire_in_decline
+			}
+			species = last_created_species
+			ethos = {
+				ethic = ethic_fanatic_materialist
+			}
+			origin = "origin_fallen_empire"
+			effect = {
+				set_country_flag = fallen_empire_1
+				add_resource = {
+					minerals = 10000
+					energy = 10000
+					food = 1000
+					influence = 500
+				}
+				# must initialize global designs here
+				add_global_ship_design = "NAME_Enforcer"
+				add_global_ship_design = "NAME_Savant"
+				add_global_ship_design = "NAME_Scholar"
+				add_global_ship_design = "NAME_Sage"
+				add_global_ship_design = "NAME_Cloaker"
+				add_global_ship_design = "NAME_Librarian"
+				add_global_ship_design = "NAME_Seeker"
+				add_global_ship_design = "NAME_FE_Starbase"
+				create_leader = {
+					name = Jaffaba
+					class = scientist
+					gender = male
+					species = owner_main_species
+					immortal = yes
+					traits = {
+						trait = leader_trait_spark_of_genius_2
+						trait = trait_ruler_logistic_understanding_2
+						trait = leader_trait_fleet_organizer_2
+						trait = subclass_scientist_councilor
+						trait = leader_trait_inquisitive_3
+						trait = leader_trait_knowledge_for_the_masses
+					}
+					skill = 9
+				}
+				set_leader = last_created_leader
+				set_ruler_title_male = "Presiding Speaker"
+				set_ruler_title_female = "Presiding Speaker"
 			}
 		}
 	}
