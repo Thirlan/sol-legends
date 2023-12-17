@@ -97,6 +97,7 @@ fallen_empire_TODO = {
 		}
 	}
 }
+
 # Spiritualist
 fallen_empire_TODO = {
 	graphical_culture = "fallen_empire_01"
@@ -144,6 +145,7 @@ fallen_empire_TODO = {
 			flag={
 				TODO
 			}
+			type = fallen_empire
 			ignore_initial_colony_error = yes
 			civics = {
 				civic = civic_lethargic_leadership
@@ -474,23 +476,12 @@ fallen_machine_empire_TODO = {
 				add_global_ship_design = "NAME_Tau"
 				add_global_ship_design = "NAME_Sigma"
 				add_global_ship_design = "NAME_FE_Starbase"
-				create_leader = {
-					name = TODO
-					class = scientist
-					species = owner_main_species
-					immortal = yes
-					traits = {
-						trait = leader_trait_ruler_machine_intelligence
-						trait = leader_trait_spark_of_genius_2
-						trait = trait_ruler_logistic_understanding_2
-						trait = leader_trait_fleet_organizer_2
-						trait = leader_trait_inquisitive_3
-					}
-					skill = 9
+				ruler = {
+					set_name = "TODO"
+					add_skill = 9
 				}
-				set_leader = last_created_leader
-				set_ruler_title_male = TODO
-				set_ruler_title_female = TODO
+				set_ruler_title_male = "TODO"
+				set_ruler_title_female = "TODO"
 			}
 		}
 	}
