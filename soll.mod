@@ -6,3 +6,4 @@ tags={
 name="Stellaris Outer Limits Legends"
 supported_version="3.11.*"
 path="C:/Users/Marc/Documents/Paradox Interactive/Stellaris/mod/SOLL"
+remote_file_id="3118523469"
