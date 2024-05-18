@@ -1,3 +1,7 @@
+# 2024/05/18 - 0.0.5
+
+Upgrading to the latest stellaris version 3.12
+
 # 2024/03/08 - 0.0.4
 
 Upgrading to the latest stellaris version 3.11
