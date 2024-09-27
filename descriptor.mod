@@ -4,4 +4,4 @@ tags={
 	"Gameplay"
 }
 name="Stellaris Outer Limits Legends"
-supported_version="v3.12.*"
+supported_version="v3.13.*"
