@@ -1,7 +1,7 @@
-version="0.0.5"
+version="0.0.7"
 
 tags={
 	"Gameplay"
 }
 name="Stellaris Outer Limits Legends"
-supported_version="v3.13.*"
+supported_version="v3.14.*"
