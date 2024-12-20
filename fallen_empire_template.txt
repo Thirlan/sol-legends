@@ -424,6 +424,7 @@ fallen_machine_empire_TODO = {
 			namelist = TODO
 			portrait = TODO
 			traits = {
+				ideal_planet_class = pc_ringworld_habitable
 				trait = trait_machine_unit
 				trait = random_traits
 			}
