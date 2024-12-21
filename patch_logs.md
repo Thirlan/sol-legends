@@ -1,3 +1,7 @@
+# 2024/12/21 - 0.1.0
+
+Loaded most winners for 2024
+
 # 2024/10/31 - 0.0.7
 
 Upgrading to the latest stellaris version 3.14

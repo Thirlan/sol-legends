@@ -28,20 +28,20 @@ fallen_empire_TODO = {
 				key="TODO"
 				literal=yes
 			}
-			class = TODO
-			namelist = TODO
-			portrait = TODO
+			class = "TODO"
+			namelist = "TODO"
+			portrait = "TODO"
 			traits = random
 			extra_trait_points = 3
 			allow_negative_traits = no
 		}
 		create_country = {
 			name = {
-				key=TODO
+				key="TODO"
 				literal=yes
 			}
-			adjective = TODO
-			authority = TODO
+			adjective = "TODO"
+			authority = "TODO"
 			flag={
 				TODO
 			}
@@ -75,7 +75,7 @@ fallen_empire_TODO = {
 				add_global_ship_design = "NAME_Seeker"
 				add_global_ship_design = "NAME_FE_Starbase"
 				create_leader = {
-					name = TODO
+					name = "TODO"
 					class = scientist
 					gender = TODO
 					species = owner_main_species
@@ -91,8 +91,8 @@ fallen_empire_TODO = {
 					skill = 9
 				}
 				set_leader = last_created_leader
-				set_ruler_title_male = TODO
-				set_ruler_title_female = TODO
+				set_ruler_title_male = "TODO"
+				set_ruler_title_female = "TODO"
 			}
 		}
 	}
@@ -128,20 +128,20 @@ fallen_empire_TODO = {
 				key="TODO"
 				literal=yes
 			}
-			class = TODO
-			namelist = TODO
-			portrait = TODO
+			class = "TODO"
+			namelist = "TODO"
+			portrait = "TODO"
 			traits = random
 			extra_trait_points = 3
 			allow_negative_traits = no
 		}
 		create_country = {
 			name = {
-				key=TODO
+				key="TODO"
 				literal=yes
 			}
-			adjective = TODO
-			authority = TODO
+			adjective = "TODO"
+			authority = "TODO"
 			flag={
 				TODO
 			}
@@ -174,7 +174,7 @@ fallen_empire_TODO = {
 				add_global_ship_design = "NAME_Pilgrim"
 				add_global_ship_design = "NAME_FE_Starbase"
 				create_leader = {
-					name = TODO
+					name = "TODO"
 					class = official
 					gender = TODO
 					species = owner_main_species
@@ -190,8 +190,8 @@ fallen_empire_TODO = {
 					skill = 9
 				}
 				set_leader = last_created_leader
-				set_ruler_title_male = TODO
-				set_ruler_title_female = TODO
+				set_ruler_title_male = "TODO"
+				set_ruler_title_female = "TODO"
 			}
 		}
 	}
@@ -223,20 +223,20 @@ fallen_empire_TODO = {
 				key="TODO"
 				literal=yes
 			}
-			class = TODO
-			namelist = TODO
-			portrait = TODO
+			class = "TODO"
+			namelist = "TODO"
+			portrait = "TODO"
 			traits = random
 			extra_trait_points = 3
 			allow_negative_traits = no
 		}
 		create_country = {
 			name = {
-				key=TODO
+				key="TODO"
 				literal=yes
 			}
-			adjective = TODO
-			authority = TODO
+			adjective = "TODO"
+			authority = "TODO"
 			flag={
 				TODO
 			}
@@ -269,9 +269,9 @@ fallen_empire_TODO = {
 				add_global_ship_design = "NAME_Builder"
 				add_global_ship_design = "NAME_FE_Starbase"
 				create_leader = {
-					name = TODO
-					class = TODO
-					gender = TODO
+					name = "TODO"
+					class = "TODO"
+					gender = "TODO"
 					species = owner_main_species
 					immortal = yes
 					traits = {
@@ -285,8 +285,8 @@ fallen_empire_TODO = {
 					skill = 9
 				}
 				set_leader = last_created_leader
-				set_ruler_title_male = TODO
-				set_ruler_title_female = TODO
+				set_ruler_title_male = "TODO"
+				set_ruler_title_female = "TODO"
 			}
 		}
 	}
@@ -319,20 +319,20 @@ fallen_empire_TODO = {
 				key="TODO"
 				literal=yes
 			}
-			class = TODO
-			namelist = TODO
-			portrait = TODO
+			class = "TODO"
+			namelist = "TODO"
+			portrait = "TODO"
 			traits = random
 			extra_trait_points = 3
 			allow_negative_traits = no
 		}
 		create_country = {
 			name = {
-				key=TODO
+				key="TODO"
 				literal=yes
 			}
-			adjective = TODO
-			authority = TODO
+			adjective = "TODO"
+			authority = "TODO"
 			flag={
 				TODO
 			}
@@ -365,7 +365,7 @@ fallen_empire_TODO = {
 				add_global_ship_design = "NAME_Destiny"
 				add_global_ship_design = "NAME_FE_Starbase"
 				create_leader = {
-					name = TODO
+					name = "TODO"
 					class = commander
 					gender = TODO
 					species = owner_main_species
@@ -382,8 +382,8 @@ fallen_empire_TODO = {
 					skill = 9
 				}
 				set_leader = last_created_leader
-				set_ruler_title_male = TODO
-				set_ruler_title_female = TODO
+				set_ruler_title_male = "TODO"
+				set_ruler_title_female = "TODO"
 			}
 		}
 	}
@@ -421,9 +421,11 @@ fallen_machine_empire_TODO = {
 				literal=yes
 			}
 			class = MACHINE
-			namelist = TODO
-			portrait = TODO
+			namelist = "TODO"
+			gender=indeterminable
+			portrait = "TODO"
 			traits = {
+				ideal_planet_class = pc_ringworld_habitable
 				trait = trait_machine_unit
 				trait = random_traits
 			}
@@ -432,10 +434,10 @@ fallen_machine_empire_TODO = {
 		}
 		create_country = {
 			name = {
-				key=TODO
+				key="TODO"
 				literal=yes
 			}
-			adjective = TODO
+			adjective = "TODO"
 			flag={
 				TODO
 			}

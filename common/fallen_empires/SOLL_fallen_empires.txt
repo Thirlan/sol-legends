@@ -255,6 +255,7 @@ fallen_the_hugbox_neighborhood = {
 			namelist = MACHINE1
 			portrait = sd_rep_robot
 			traits = {
+				ideal_planet_class = pc_ringworld_habitable
 				trait = trait_machine_unit
 				trait = random_traits
 			}
@@ -785,13 +786,15 @@ fallen_empire_of_the_glirr = {
 # 2023aug: Mircov Coalescence - MetallicHydra
 # 2023sep: Mircov Coalescence - MetallicHydra
 # 2023oct: Mircov Coalescence - MetallicHydra
+# 2024mar: Mircov Coalescence - MetallicHydra
+# 2024aug: Mircov Coalescence - MetallicHydra
 # machine
 fallen_mircorv_coalescence = {
 	graphical_culture = "fallen_machine_empire_01"
 	initializer = "fallen_machine"
 
 	weight_modifier = {
-		base = 400
+		base = 600
 	}
 
 	possible = {
@@ -816,6 +819,7 @@ fallen_mircorv_coalescence = {
 			namelist = MACHINE1
 			portrait = sd_pla_robot
 			traits = {
+				ideal_planet_class = pc_ringworld_habitable
 				trait = trait_machine_unit
 				trait = random_traits
 			}
@@ -1003,6 +1007,119 @@ fallen_empire_united_earth = {
 		}
 	}
 }
+
+# 2023sept2: The Moragi Free State - Greem Mountain Man
+# Spiritualist
+fallen_empire_moragi = {
+	graphical_culture = "fallen_empire_03"
+	initializer = "fallen_3"
+
+	weight_modifier = {
+		base = 100
+	}
+
+	create_country_effect = {
+		create_species = {
+			name=
+			{
+				key="Moragi"
+				literal=yes
+			}
+			plural=
+			{
+				key="Moragis"
+				literal=yes
+			}
+			adjective=
+			{
+				key="Moragian"
+				literal=yes
+			}
+			class = "MAM"
+			namelist = "MAM3"
+			portrait = "mam5"
+			traits = random
+			extra_trait_points = 3
+			allow_negative_traits = no
+		}
+		create_country = {
+			name = {
+				key="Moragi Free State"
+				literal=yes
+			}
+			adjective = Moragian
+			authority = "auth_democratic"
+			flag={
+				icon=
+				{
+					category="domination"
+					file="domination_1.dds"
+				}
+				background=
+				{
+					category="backgrounds"
+					file="stripe.dds"
+				}
+				colors=
+				{
+					"orange"
+					"shadow_blue"
+					"black"
+					"null"
+				}
+			}
+			type = fallen_empire
+			ignore_initial_colony_error = yes
+			civics = {
+				civic = civic_lethargic_leadership
+				civic = civic_empire_in_decline
+			}
+			species = last_created_species
+			ethos = {
+				ethic = ethic_fanatic_xenophile
+			}
+			origin = "origin_fallen_empire"
+			effect = {
+				set_country_flag = fallen_empire_3
+				add_resource = {
+					minerals = 10000
+					energy = 10000
+					food = 1000
+					influence = 500
+				}
+				# must initialize global designs here
+				add_global_ship_design = "NAME_Adjuster"
+				add_global_ship_design = "NAME_Keeper"
+				add_global_ship_design = "NAME_Custodian"
+				add_global_ship_design = "NAME_Overseer"
+				add_global_ship_design = "NAME_Watcher"
+				add_global_ship_design = "NAME_Seeder"
+				add_global_ship_design = "NAME_Builder"
+				add_global_ship_design = "NAME_FE_Starbase"
+				create_leader = {
+					name = "Gorlife Hussel"
+					class = official
+					gender = female
+					species = owner_main_species
+					immortal = yes
+					traits = {
+						trait = leader_trait_principled_2
+						trait = trait_ruler_logistic_understanding_2
+						trait = leader_trait_fleet_organizer_2
+						trait = subclass_official_economy_councilor
+						trait = leader_trait_cultural_focus_3
+						trait = leader_trait_utopian_idealist
+					}
+					skill = 9
+				}
+				set_leader = last_created_leader
+				set_ruler_title_male = "Chancellor"
+				set_ruler_title_female = "Chancellor"
+			}
+		}
+	}
+}
+
 
 # 2023sept2: The Lilliput Empire - Leoback
 # Spiritualist
@@ -1236,3 +1353,600 @@ fallen_empire_coaltion_of_equals = {
 		}
 	}
 }
+
+# 2023dec: Vyllarion Protectors - MetallicHydra
+# Determined Exterminators, todo
+
+
+
+# 2024jan: The Pornhub A.I. - Leoback
+# machine
+fallen_machine_empire_pornhub = {
+	graphical_culture = "fallen_machine_empire_01"
+	initializer = "fallen_machine"
+
+	weight_modifier = {
+		base = 100
+	}
+
+	possible = {
+		host_has_dlc = "Synthetic Dawn Story Pack"
+	}
+
+	create_country_effect = {
+		
+		create_species = {
+			name=
+			{
+				key="Lovebot"
+				literal=yes
+			}
+			plural=
+			{
+				key="Lovebots"
+				literal=yes
+			}
+			adjective=
+			{
+				key="Loving"
+				literal=yes
+			}
+			class = "MACHINE"
+			namelist = "MACHINE1"
+			portrait = "aqu_machine"
+			traits = {
+				ideal_planet_class = pc_ringworld_habitable
+				trait = trait_machine_unit
+				trait = random_traits
+			}
+			extra_trait_points = 3
+			allow_negative_traits = no
+			gender=indeterminable
+		}
+		create_country = {
+			name = {
+				key="The Pornhub A.I."
+				literal=yes
+			}
+			adjective = "Pornographic"
+			flag={
+				icon=
+				{
+					category="blocky"
+					file="flag_blocky_11.dds"
+				}
+				background=
+				{
+					category="backgrounds"
+					file="vertical.dds"
+				}
+				colors=
+				{
+					"black"
+					"light_orange"
+					"black"
+					"null"
+				}
+			}
+			type = fallen_empire
+			ignore_initial_colony_error = yes
+			authority = auth_machine_intelligence
+			civics = {
+				civic = civic_machine_remnants
+				civic = civic_custodian_directives
+			}
+			species = last_created_species
+			ethos = {
+				ethic = ethic_gestalt_consciousness
+			}
+			origin = "origin_fallen_empire"
+			effect = {
+				
+				set_country_flag = fallen_empire_machine
+				add_resource = {
+					minerals = 10000
+					energy = 10000
+					food = 1000
+					influence = 500
+				}
+				if = {
+					limit = { host_has_dlc = "Apocalypse" }
+					give_technology = {
+						tech = tech_colossus
+						message = no
+					}
+				}
+				# must initialize global designs here
+				add_global_ship_design = "NAME_Omega"
+				add_global_ship_design = "NAME_Alpha"
+				add_global_ship_design = "NAME_Beta"
+				add_global_ship_design = "NAME_Gamma"
+				add_global_ship_design = "NAME_Theta"
+				add_global_ship_design = "NAME_Tau"
+				add_global_ship_design = "NAME_Sigma"
+				add_global_ship_design = "NAME_FE_Starbase"
+				ruler = {
+					set_name = "Unit 00"
+					add_skill = 9
+				}
+				set_ruler_title_male = "Fetish Curator"
+				set_ruler_title_female = "Fetish Curator"
+			}
+		}
+	}
+}
+
+# 2024feb: Cooperative Society of Syndicate - Humanplayer
+# Spiritualist
+fallen_empire_syndicate = {
+	graphical_culture = "fallen_empire_01"
+	initializer = "fallen_2"
+
+	weight_modifier = {
+		base = 100
+		modifier = {
+			factor = 99999
+			has_origin = origin_scion
+		}
+	}
+
+	create_country_effect = {
+		create_species = {
+			name=
+			{
+				key="Comrade"
+				literal=yes
+			}
+			plural=
+			{
+				key="Comrades"
+				literal=yes
+			}
+			adjective=
+			{
+				key="Comradely"
+				literal=yes
+			}
+			class = "HUM"
+			namelist = "HUMAN1"
+			portrait = "human"
+			traits = random
+			extra_trait_points = 3
+			allow_negative_traits = no
+		}
+		create_country = {
+			name = {
+				key="Cooperative Society of Syndicate"
+				literal=yes
+			}
+			adjective = "Syndicated"
+			authority = auth_dictatorial
+			flag={
+				icon=
+				{
+					category="human"
+					file="flag_human_11.dds"
+				}
+				background=
+				{
+					category="backgrounds"
+					file="flag_BG_48.dds"
+				}
+				colors=
+				{
+					"black"
+					"red"
+					"black"
+					"null"
+				}
+			}
+			type = fallen_empire
+			ignore_initial_colony_error = yes
+			civics = {
+				civic = civic_lethargic_leadership
+				civic = civic_empire_in_decline
+			}
+			species = last_created_species
+			ethos = {
+				ethic = ethic_fanatic_spiritualist
+			}
+			origin = "origin_fallen_empire"
+			effect = {
+				set_country_flag = fallen_empire_2
+				add_resource = {
+					minerals = 10000
+					energy = 10000
+					food = 1000
+					influence = 500
+				}
+				# must initialize global designs here
+				add_global_ship_design = "NAME_Cleanser"
+				add_global_ship_design = "NAME_Eternal"
+				add_global_ship_design = "NAME_Avatar"
+				add_global_ship_design = "NAME_Zealot"
+				add_global_ship_design = "NAME_Penitent"
+				add_global_ship_design = "NAME_Faith"
+				add_global_ship_design = "NAME_Pilgrim"
+				add_global_ship_design = "NAME_FE_Starbase"
+				create_leader = {
+					class = official
+					species = owner_main_species
+					immortal = yes
+					traits = {
+						trait = leader_trait_principled_2
+						trait = trait_ruler_logistic_understanding_2
+						trait = leader_trait_fleet_organizer_2
+						trait = subclass_official_economy_councilor
+						trait = leader_trait_cultural_focus_3
+						trait = leader_trait_utopian_idealist
+					}
+					skill = 9
+				}
+				set_leader = last_created_leader
+				set_ruler_title_male = "Presiding Speaker"
+				set_ruler_title_female = "Presiding Speaker"
+			}
+		}
+	}
+}
+
+# 2024apr: Vulture Capitalists - Leoback
+# 2024apr2: Irenic Uranium Foundation - Leoback
+
+# 2024may: Kubik Union - Leoback
+# machine
+fallen_machine_empire_kubik = {
+	graphical_culture = "fallen_machine_empire_01"
+	initializer = "fallen_machine"
+
+	weight_modifier = {
+		base = 100
+	}
+
+	possible = {
+		host_has_dlc = "Synthetic Dawn Story Pack"
+	}
+
+	create_country_effect = {
+		
+		create_species = {
+			name=
+			{
+				key="Kubik"
+				literal=yes
+			}
+			plural=
+			{
+				key="Kubiks"
+				literal=yes
+			}
+			adjective=
+			{
+				key="Kubik"
+				literal=yes
+			}
+			class = MACHINE
+			namelist = "MACHINE3"
+			portrait = "cyb_machine"
+			traits = {
+				ideal_planet_class = pc_ringworld_habitable
+				trait = trait_machine_unit
+				trait = random_traits
+			}
+			extra_trait_points = 3
+			allow_negative_traits = no
+		}
+		create_country = {
+			name = {
+				key="Kubik Union"
+				literal=yes
+			}
+			adjective = "Unioned"
+			flag={
+				icon=
+				{
+					category="blocky"
+					file="flag_blocky_22.dds"
+				}
+				background=
+				{
+					category="backgrounds"
+					file="flag_BG_19.dds"
+				}
+				colors=
+				{
+					"red"
+					"bright_yellow"
+					"black"
+					"null"
+				}
+			}
+			type = fallen_empire
+			ignore_initial_colony_error = yes
+			authority = auth_machine_intelligence
+			civics = {
+				civic = civic_machine_remnants
+				civic = civic_custodian_directives
+			}
+			species = last_created_species
+			ethos = {
+				ethic = ethic_gestalt_consciousness
+			}
+			origin = "origin_fallen_empire"
+			effect = {
+				
+				set_country_flag = fallen_empire_machine
+				add_resource = {
+					minerals = 10000
+					energy = 10000
+					food = 1000
+					influence = 500
+				}
+				if = {
+					limit = { host_has_dlc = "Apocalypse" }
+					give_technology = {
+						tech = tech_colossus
+						message = no
+					}
+				}
+				# must initialize global designs here
+				add_global_ship_design = "NAME_Omega"
+				add_global_ship_design = "NAME_Alpha"
+				add_global_ship_design = "NAME_Beta"
+				add_global_ship_design = "NAME_Gamma"
+				add_global_ship_design = "NAME_Theta"
+				add_global_ship_design = "NAME_Tau"
+				add_global_ship_design = "NAME_Sigma"
+				add_global_ship_design = "NAME_FE_Starbase"
+				ruler = {
+					set_name = "Kubik"
+					add_skill = 9
+				}
+				set_ruler_title_male = "The"
+				set_ruler_title_female = "The"
+			}
+		}
+	}
+}
+
+# 2024jun: Very Angry Circles? - Zopto
+# Determined Exterminators - todo
+
+
+# 2024jul: Arc Furnace Enjoyers - Timmedy
+# machine
+fallen_machine_empire_welders = {
+	graphical_culture = "fallen_machine_empire_01"
+	initializer = "fallen_machine"
+
+	weight_modifier = {
+		base = 100
+	}
+
+	possible = {
+		host_has_dlc = "Synthetic Dawn Story Pack"
+	}
+
+	create_country_effect = {
+		
+		create_species = {
+			name=
+			{
+				key="Welder"
+				literal=yes
+			}
+			plural=
+			{
+				key="Welders"
+				literal=yes
+			}
+			adjective=
+			{
+				key="Welded"
+				literal=yes
+			}
+			class = MACHINE
+			namelist = "MACHINE1"
+			portrait = "sd_mol_robot"
+			traits = {
+				ideal_planet_class = pc_ringworld_habitable
+				trait = trait_machine_unit
+				trait = random_traits
+			}
+			extra_trait_points = 3
+			allow_negative_traits = no
+		}
+		create_country = {
+			name = {
+				key="Arc Furnace Enjoyers"
+				literal=yes
+			}
+			adjective = "Weldable"
+			flag={
+				icon=
+				{
+					category="plantoid"
+					file="plantoid_10.dds"
+				}
+				background=
+				{
+					category="backgrounds"
+					file="flag_BG_20.dds"
+				}
+				colors=
+				{
+					"green"
+					"pink"
+					"black"
+					"null"
+				}
+			}
+			type = fallen_empire
+			ignore_initial_colony_error = yes
+			authority = auth_machine_intelligence
+			civics = {
+				civic = civic_machine_remnants
+				civic = civic_custodian_directives
+			}
+			species = last_created_species
+			ethos = {
+				ethic = ethic_gestalt_consciousness
+			}
+			origin = "origin_fallen_empire"
+			effect = {
+				
+				set_country_flag = fallen_empire_machine
+				add_resource = {
+					minerals = 10000
+					energy = 10000
+					food = 1000
+					influence = 500
+				}
+				if = {
+					limit = { host_has_dlc = "Apocalypse" }
+					give_technology = {
+						tech = tech_colossus
+						message = no
+					}
+				}
+				# must initialize global designs here
+				add_global_ship_design = "NAME_Omega"
+				add_global_ship_design = "NAME_Alpha"
+				add_global_ship_design = "NAME_Beta"
+				add_global_ship_design = "NAME_Gamma"
+				add_global_ship_design = "NAME_Theta"
+				add_global_ship_design = "NAME_Tau"
+				add_global_ship_design = "NAME_Sigma"
+				add_global_ship_design = "NAME_FE_Starbase"
+				ruler = {
+					set_name = "01"
+					add_skill = 9
+				}
+				set_ruler_title_male = "Prime Minister"
+				set_ruler_title_female = "Prime Minister"
+			}
+		}
+	}
+}
+
+# 2024aug2: Prophets Augmentation Inc. - Leoback
+
+
+# 2024sep: Zaibatsu Guidance - Humanplayer
+# machine
+fallen_machine_empire_zaibatsu = {
+	graphical_culture = "fallen_machine_empire_01"
+	initializer = "fallen_machine"
+
+	weight_modifier = {
+		base = 100
+	}
+
+	possible = {
+		host_has_dlc = "Synthetic Dawn Story Pack"
+	}
+
+	create_country_effect = {
+		
+		create_species = {
+			name=
+			{
+				key="Zaibatzu"
+				literal=yes
+			}
+			plural=
+			{
+				key="Zaibatzu"
+				literal=yes
+			}
+			adjective=
+			{
+				key="Zaibatzu"
+				literal=yes
+			}
+			class = MACHINE
+			namelist = "MACHINE3"
+			gender=indeterminable
+			portrait = "synth_machine_08"
+			traits = {
+				ideal_planet_class = pc_ringworld_habitable
+				trait = trait_machine_unit
+				trait = random_traits
+			}
+			extra_trait_points = 3
+			allow_negative_traits = no
+		}
+		create_country = {
+			name = {
+				key="Zaibatsu Guidance"
+				literal=yes
+			}
+			adjective="Guided"
+			flag={
+				icon=
+				{
+					category="corporate"
+					file="corporate_02.dds"
+				}
+				background=
+				{
+					category="backgrounds"
+					file="circle.dds"
+				}
+				colors=
+				{
+					"white"
+					"red"
+					"black"
+					"null"
+				}
+			}
+			type = fallen_empire
+			ignore_initial_colony_error = yes
+			authority = auth_machine_intelligence
+			civics = {
+				civic = civic_machine_remnants
+				civic = civic_custodian_directives
+			}
+			species = last_created_species
+			ethos = {
+				ethic = ethic_gestalt_consciousness
+			}
+			origin = "origin_fallen_empire"
+			effect = {
+				
+				set_country_flag = fallen_empire_machine
+				add_resource = {
+					minerals = 10000
+					energy = 10000
+					food = 1000
+					influence = 500
+				}
+				if = {
+					limit = { host_has_dlc = "Apocalypse" }
+					give_technology = {
+						tech = tech_colossus
+						message = no
+					}
+				}
+				# must initialize global designs here
+				add_global_ship_design = "NAME_Omega"
+				add_global_ship_design = "NAME_Alpha"
+				add_global_ship_design = "NAME_Beta"
+				add_global_ship_design = "NAME_Gamma"
+				add_global_ship_design = "NAME_Theta"
+				add_global_ship_design = "NAME_Tau"
+				add_global_ship_design = "NAME_Sigma"
+				add_global_ship_design = "NAME_FE_Starbase"
+				ruler = {
+					set_name = "Harmonizer"
+					add_skill = 9
+				}
+				set_ruler_title_male = "Saiko keiei sekininsha"
+				set_ruler_title_female = "Saiko keiei sekininsha"
+			}
+		}
+	}
+}
+
+# 2024nov: Cetana
