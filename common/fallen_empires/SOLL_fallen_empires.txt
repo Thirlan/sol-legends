@@ -6,6 +6,16 @@ fallen_empire_of_gloom = {
 
 	weight_modifier = {
 		base = 100
+		modifier = {
+			factor = 0
+			any_country = {
+				has_country_flag = fallen_empire_1
+			}
+		}
+		modifier = {
+			factor = 99999
+			has_origin = origin_scion
+		}
 	}
 
 	create_country_effect = {
@@ -117,6 +127,12 @@ fallen_rudonian_peoples_republic = {
 
 	weight_modifier = {
 		base = 100
+		modifier = {
+			factor = 0
+			any_country = {
+				has_country_flag = fallen_empire_3
+			}
+		}
 	}
 
 	create_country_effect = {
@@ -228,6 +244,12 @@ fallen_the_hugbox_neighborhood = {
 
 	weight_modifier = {
 		base = 100
+		modifier = {
+			factor = 0
+			any_country = {
+				has_country_flag = fallen_machine_empire_1
+			}
+		}
 	}
 
 	possible = {
@@ -342,6 +364,12 @@ fallen_empire_lenkashayt_acquisitive_venture = {
 
 	weight_modifier = {
 		base = 100
+		modifier = {
+			factor = 0
+			any_country = {
+				has_country_flag = fallen_empire_3
+			}
+		}
 	}
 
 	create_country_effect = {
@@ -454,6 +482,12 @@ fallen_empire_leaders_of_the_free_world = {
 
 	weight_modifier = {
 		base = 100
+		modifier = {
+			factor = 0
+			any_country = {
+				has_country_flag = fallen_empire_3
+			}
+		}
 	}
 
 	create_country_effect = {
@@ -564,6 +598,12 @@ fallen_empire_radishing_vassal_factory = {
 
 	weight_modifier = {
 		base = 100
+		modifier = {
+			factor = 0
+			any_country = {
+				has_country_flag = fallen_empire_4
+			}
+		}
 	}
 
 	create_country_effect = {
@@ -676,6 +716,12 @@ fallen_empire_of_the_glirr = {
 
 	weight_modifier = {
 		base = 100
+		modifier = {
+			factor = 0
+			any_country = {
+				has_country_flag = fallen_empire_4
+			}
+		}
 	}
 
 	create_country_effect = {
@@ -795,6 +841,12 @@ fallen_mircorv_coalescence = {
 
 	weight_modifier = {
 		base = 600
+		modifier = {
+			factor = 0
+			any_country = {
+				has_country_flag = fallen_machine_empire
+			}
+		}
 	}
 
 	possible = {
@@ -904,6 +956,12 @@ fallen_empire_united_earth = {
 
 	weight_modifier = {
 		base = 100
+		modifier = {
+			factor = 0
+			any_country = {
+				has_country_flag = fallen_empire_4
+			}
+		}
 	}
 
 	create_country_effect = {
@@ -1016,6 +1074,12 @@ fallen_empire_moragi = {
 
 	weight_modifier = {
 		base = 100
+		modifier = {
+			factor = 0
+			any_country = {
+				has_country_flag = fallen_empire_3
+			}
+		}
 	}
 
 	create_country_effect = {
@@ -1129,6 +1193,12 @@ fallen_empire_lilliput = {
 
 	weight_modifier = {
 		base = 100
+		modifier = {
+			factor = 0
+			any_country = {
+				has_country_flag = fallen_empire_2
+			}
+		}
 		modifier = {
 			factor = 99999
 			has_origin = origin_scion
@@ -1245,6 +1315,12 @@ fallen_empire_coaltion_of_equals = {
 
 	weight_modifier = {
 		base = 100
+		modifier = {
+			factor = 0
+			any_country = {
+				has_country_flag = fallen_empire_1
+			}
+		}
 		modifier = {
 			factor = 99999
 			has_origin = origin_scion
@@ -1367,6 +1443,12 @@ fallen_machine_empire_pornhub = {
 
 	weight_modifier = {
 		base = 100
+		modifier = {
+			factor = 0
+			any_country = {
+				has_country_flag = fallen_empire_machine
+			}
+		}
 	}
 
 	possible = {
@@ -1485,6 +1567,12 @@ fallen_empire_syndicate = {
 	weight_modifier = {
 		base = 100
 		modifier = {
+			factor = 0
+			any_country = {
+				has_country_flag = fallen_empire_2
+			}
+		}
+		modifier = {
 			factor = 99999
 			has_origin = origin_scion
 		}
@@ -1601,6 +1689,12 @@ fallen_machine_empire_kubik = {
 
 	weight_modifier = {
 		base = 100
+		modifier = {
+			factor = 0
+			any_country = {
+				has_country_flag = fallen_empire_machine
+			}
+		}
 	}
 
 	possible = {
@@ -1721,6 +1815,12 @@ fallen_machine_empire_welders = {
 
 	weight_modifier = {
 		base = 100
+		modifier = {
+			factor = 0
+			any_country = {
+				has_country_flag = fallen_empire_machine
+			}
+		}
 	}
 
 	possible = {
@@ -1840,6 +1940,12 @@ fallen_machine_empire_zaibatsu = {
 
 	weight_modifier = {
 		base = 100
+		modifier = {
+			factor = 0
+			any_country = {
+				has_country_flag = fallen_empire_machine
+			}
+		}
 	}
 
 	possible = {
